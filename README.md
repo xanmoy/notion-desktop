@@ -2,7 +2,7 @@
 
 Notion Desktop is a cross-platform desktop application that allows you to use Notion directly on your computer, making it easier to chat with friends and family while working.
 
-![Image](https://github.com/xanmoy/notion-desktop/blob/main/screenshots/notion-desktop.jpeg)
+![Image](https://github.com/xanmoy/notion-desktop/blob/main/screenshots/notion-desktop.jpeg?raw=true)
 
 ## 🛠 **Features**
 
@@ -15,7 +15,7 @@ Notion Desktop is a cross-platform desktop application that allows you to use No
 
 ---
 
-![Image](https://github.com/xanmoy/notion-desktop/blob/main/screenshots/image1.png)
+![Image](https://github.com/xanmoy/notion-desktop/blob/main/screenshots/image1.png?raw=true)
 
 ## 📦 **Installation**
 
@@ -25,41 +25,55 @@ sudo snap install notion-desktop
 
 ### Build From Source
 
-1. **Clone the repository**:
+#### 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/xanmoy/notion-desktop.git
-cd notion-desktop
+   git clone https://github.com/xanmoy/notion-desktop.git
+   cd notion-desktop
 ```
 
-2. **Install dependencies**: Ensure that you have all the necessary dependencies installed.
+#### 2. **Install dependencies**: Ensure that you have all the necessary dependencies installed.
 
 ```bash
-   npm instal
+   npm install
 ```
 
-3. Start the application:
+#### 3. **Start the application**:
 
 ```bash
-npm start
+   npm start
 ```
 
-4. **Build the application**: Run the following command to create a Snap package of the application.
+#### 4. **Build the application**:
+
+Run **one** of the following commands depending on the package format you want to generate:
+
+##### **Snap package**
 
 ```bash
-npm run dist
+   npm run dist:snap
 ```
 
-5. **Change to the dist directory**: Navigate to the dist directory where the Snap package is located.
+**OR**
 
-```bash
-cd dist
+##### **AppImage package** ([What are AppImages?](https://appimage.org/))
+
+```bash  
+   npm run dist:appimage
 ```
 
-6. **Install the Snap package**: Use the following command to install the Snap package. The `--dangerous` flag allows the installation of locally built packages.
+#### 5. Change to the dist directory
+
+Navigate to the directory where the generated package (Snap or AppImage) is located:
 
 ```bash
-sudo snap install --dangerous ./Notion-desktop_1.0.3_amd64.snap 
+   cd dist
+```
+
+#### 6. **Install the Snap package**: Use the following command to install the Snap package. The `--dangerous` flag allows the installation of locally built packages.
+
+```bash
+   sudo snap install --dangerous ./notion-desktop_1.2.0_amd64.snap 
 ```
 
 ## ↩️ **Uninstallation Steps**
@@ -67,14 +81,14 @@ sudo snap install --dangerous ./Notion-desktop_1.0.3_amd64.snap
 Remove the Snap package: To uninstall the Notion Desktop application, run the following command:
 
 ```bash
-sudo snap remove Notion-desktop
+   sudo snap remove notion-desktop
 ```
 
 ## 📖 **Usage Instructions**
 
 ### **Launching the App**:
 
-   After installation, open Notion Desktop using:
+After installation, open Notion Desktop using:
 
 ```bash
    notion-desktop
