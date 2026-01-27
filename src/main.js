@@ -58,6 +58,7 @@ const createWindow = () => {
             nativeWindowOpen: true, // Enables proper popup handling
             preload: path.join(__dirname, 'preload.js'),
             webSecurity: true,
+            spellcheck: false, 
         },
     });
 
