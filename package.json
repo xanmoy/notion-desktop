@@ -12,7 +12,10 @@
   "build": {
     "appId": "com.example.notiondesktopclient",
     "linux": {
-      "target": ["snap", "AppImage"],
+      "target": [
+        "snap",
+        "AppImage"
+      ],
       "icon": "assets/icon.png",
       "category": "Utility"
     }
@@ -29,8 +32,8 @@
   "license": "ISC",
   "description": "A simple and efficient desktop client for Notion.",
   "devDependencies": {
-    "electron": "^33.2.0",
-    "electron-builder": "^25.1.8"
+    "electron": "^40.0.0",
+    "electron-builder": "^26.4.0"
   },
   "dependencies": {
     "electron-context-menu": "^4.0.4"
