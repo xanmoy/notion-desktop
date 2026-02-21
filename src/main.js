@@ -50,7 +50,7 @@ const createWindow = () => {
         y: state.y,
         width: state.width,
         height: state.height,
-        icon: path.join(__dirname, 'assets/icon.png'),
+        icon: path.join(__dirname, '../assets/icon.png'),
         autoHideMenuBar: true,
         webPreferences: {
             nodeIntegration: false,
