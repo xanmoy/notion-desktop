@@ -29,8 +29,8 @@
   "license": "ISC",
   "description": "A simple and efficient desktop client for Notion.",
   "devDependencies": {
-    "electron": "^33.2.0",
-    "electron-builder": "^25.1.8"
+    "electron": "^41.2.0",
+    "electron-builder": "^26.8.1"
   },
   "dependencies": {
     "electron-context-menu": "^4.0.4"
