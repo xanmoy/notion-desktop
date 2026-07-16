@@ -12,9 +12,18 @@
   "build": {
     "appId": "com.example.notiondesktopclient",
     "linux": {
-      "target": ["snap", "AppImage"],
+      "target": [
+        "snap",
+        "AppImage"
+      ],
       "icon": "assets/icon.png",
       "category": "Utility"
+    },
+    "snap": {
+      "plugs": [
+        "default",
+        "audio-record"
+      ]
     }
   },
   "repository": "https://github.com/xanmoy/notion-desktop.git",
